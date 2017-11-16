@@ -1,0 +1,119 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'PingFang Regular';
+    src: url('../fonts/PingFang_SC_Regular.eot');
+    src: local('PingFang Regular'),
+    local('PingFang Regular'),
+    url('../fonts/PingFang_SC_Regular.woff') format('woff'),
+    url('../fonts/PingFang SC Regular.ttf') format('truetype'),
+    url('../fonts/PingFang_SC_Regular.svg#PingFang Regular') format('svg');
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.share{
+    width: 100%;
+    background: url("../images/xhdpi/beijing.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-size: 0.32rem;
+    font-family: 'PingFang Regular';
+    padding-top: 8.68rem;
+}
+.share span{
+    display: inline-block;
+    width: 0.54rem;
+    height: 0.62rem;
+    margin-right: 0.3rem;
+    background: url("../images/xhdpi/android.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.androidBtn,.iosBtn{
+    margin: 0 auto;
+    width: 5.12rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    -webkit-border-radius: 0.45rem;
+    -moz-border-radius: 0.45rem;
+    border-radius: 0.45rem;
+    border: 0.02rem solid #89d75d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.share .androidBtn{
+    color: #89d75d;
+}
+.share .iosBtn{
+    margin-top: 0.5rem;
+    color: #fff;
+    background: #89d75d;
+}
+.share .iosBtn span{
+    background-image: url("../images/xhdpi/iphone.png");
+}
+
+
+/*适配图片*/
+/*xxxhdpi*/
+@media screen and (-webkit-max-device-pixel-ratio: 4){
+    .share{
+        background-image: url("../images/xxxhdpi/beijing.png");
+    }
+    .share span{
+        background-image: url("../images/xxxhdpi/android.png");
+    }
+    .share .iosBtn span{
+        background-image: url("../images/xxxhdpi/iphone.png");
+    }
+}
+/*xxhdpi*/
+@media screen and (-webkit-max-device-pixel-ratio: 3){
+    .share{
+        background-image: url("../images/xxhdpi/beijing.png");
+    }
+    .share span{
+        background-image: url("../images/xxhdpi/android.png");
+    }
+    .share .iosBtn span{
+        background-image: url("../images/xxhdpi/iphone.png");
+    }
+}
+/*xhdpi*/
+@media screen and (-webkit-max-device-pixel-ratio: 2){
+    .share{
+        background-image: url("../images/xhdpi/beijing.png");
+    }
+    .share span{
+        background-image: url("../images/xhdpi/android.png");
+    }
+    .share .iosBtn span{
+        background-image: url("../images/xhdpi/iphone.png");
+    }
+}
+/*hdpi*/
+@media screen and (-webkit-max-device-pixel-ratio: 1.5){
+    .share{
+        background-image: url("../images/hdpi/beijing.png");
+    }
+    .share span{
+        background-image: url("../images/hdpi/android.png");
+    }
+    .share .iosBtn span{
+        background-image: url("../images/hdpi/iphone.png");
+    }
+}
+/*mdpi*/
+@media screen and (-webkit-max-device-pixel-ratio: 1){
+    .share{
+        background-image: url("../images/mdpi/beijing.png");
+    }
+    .share span{
+        background-image: url("../images/mdpi/android.png");
+    }
+    .share .iosBtn span{
+        background-image: url("../images/mdpi/iphone.png");
+    }
+}
