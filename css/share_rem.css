@@ -40,7 +40,7 @@ html,body{
     -webkit-border-radius: 0.45rem;
     -moz-border-radius: 0.45rem;
     border-radius: 0.45rem;
-    border: 0.02rem solid #89d75d;
+    border: 1px solid #89d75d;
     display: flex;
     align-items: center;
     justify-content: center;
