@@ -30,6 +30,9 @@ html,body{
     -webkit-background-size: cover;
     background-size: cover;
 }
+.share em{
+    display: inline-block;
+}
 .androidBtn,.iosBtn{
     margin: 0 auto;
     width: 512px;
